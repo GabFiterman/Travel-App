@@ -1,5 +1,5 @@
 <template>
-<div class="Panama">
+<div class="name Panama">
     <h1>Panama</h1>
 </div>
 </template>
@@ -9,3 +9,10 @@ export default{
     name: 'Panama',
 }
 </script>
+
+<style scoped>
+.Panama{
+    color: white;
+    background-color: violet;
+}
+</style>

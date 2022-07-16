@@ -1,5 +1,5 @@
 <template>
-<div class="Hawaii">
+<div class="name Hawaii">
     <h1>Hawaii</h1>
 </div>
 </template>
@@ -9,3 +9,10 @@ export default{
     name: 'Hawaii',
 }
 </script>
+
+<style scoped>
+.Hawaii{
+    color: white;
+    background-color: lightseagreen;
+}
+</style>
