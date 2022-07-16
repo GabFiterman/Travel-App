@@ -1,7 +1,15 @@
 <template>
-   <h1>Hello World</h1> 
-  <img alt="vue logo" src="..\public\vite.svg" />
-  <RouterView />
+<nav id="nav">
+  <router-link to="/">Home</router-link>
+  <router-link to="/Brazil">Brazil</router-link>
+  <router-link to="/Hawaii">Hawaii</router-link>
+  <router-link to="/Jamaica">Jamaica</router-link>
+  <router-link to="/Panama">Panama</router-link>
+</nav>
+
+  <div class="container">
+    <router-view></router-view>
+  </div>
 </template>
 
 <script>
@@ -9,12 +17,5 @@
 </script>
 
 <style>
-#App{
-  font-family: Avenir, Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: graysclace;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+@import './assets/main.css';
 </style>
