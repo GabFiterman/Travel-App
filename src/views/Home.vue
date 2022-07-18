@@ -2,25 +2,25 @@
     <div class="home">
         <h1>All Destinations</h1>
         <div class="destinations"></div>
+        <div class="destination-card">
+            <router-link v-for="destination in destinations" :key="destination.id"
+                :to="{ name: 'destination.show', params: { id: destination.id } }">
 
-        <router-link 
-            v-for="destination in destinations"
-            :key="destination.id"
-            :to="{name:'destination.show', params: {id: destination.id}}"
-        >
-        
-        <h2>{{destination.name}}</h2>
-        <img :src="`/images/${destination.image}`" :alt="destination.name" />
-        </router-link>
+
+                <h2>{{ destination.name }}</h2>
+                <img :src="`/images/${destination.image}`" :alt="destination.name" />
+            </router-link>
+        </div>
+
     </div>
 </template>
 
 <script>
 import sourceData from '../..//data.json';
-export default{
+export default {
     name: 'Home',
-    data(){
-        return{
+    data() {
+        return {
             destinations: sourceData.destinations
         };
     },
@@ -28,7 +28,4 @@ export default{
 </script>
 
 <style scoped>
-.destinations{
-    display: flex;
-}
 </style>
