@@ -34,7 +34,8 @@ const routes = [{
 
 const router = createRouter({
     history: createWebHistory(),
-    routes
+    routes,
+    linkActiveClass: 'gabe-active-class'
 });
 
 export default router;

@@ -15,4 +15,9 @@ export default {
 </script>
 
 <style>
+#app .gabe-active-class{
+    color: #89a0b7;
+    font-weight: bold;
+    border-bottom: 2px solid #89a0b7;
+}
 </style>
