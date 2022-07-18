@@ -1,31 +1,34 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import Home from '../src/views/Home.vue'
 
-const routes = [
-    { path: '/', name: 'Home', component: Home },
+const routes = [{
+        path: '/',
+        name: 'Home',
+        component: Home
+    },
     {
         path: '/Brazil',
         name: 'Brazil',
         component: () =>
-            import ('../src/views/Brazil.vue')
+            import ( /* webpackChunckName: "brazil" */ '../src/views/Brazil.vue')
     },
     {
         path: '/Hawaii',
         name: 'Hawaii',
         component: () =>
-            import ('../src/views/Hawaii.vue')
+            import ( /* webpackChunckName: "hawaii" */ '../src/views/Hawaii.vue')
     },
     {
         path: '/Jamaica',
         name: 'Jamaica',
         component: () =>
-            import ('../src/views/Jamaica.vue')
+            import ( /* webpackChunckName: "jamaica" */ '../src/views/Jamaica.vue')
     },
     {
         path: '/Panama',
         name: 'Panama',
         component: () =>
-            import ('../src/views/Panama.vue')
+            import ( /* webpackChunckName: "panama" */ '../src/views/Panama.vue')
     }
 ];
 
