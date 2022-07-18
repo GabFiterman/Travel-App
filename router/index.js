@@ -29,6 +29,11 @@ const routes = [{
         name: 'Panama',
         component: () =>
             import ( /* webpackChunckName: "panama" */ '../src/views/Panama.vue')
+    },
+    {
+        path: '/destination/:id',
+        component: () =>
+            import ('../src/views/DestinationShow.vue')
     }
 ];
 
