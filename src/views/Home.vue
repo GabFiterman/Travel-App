@@ -1,8 +1,7 @@
 <template>
     <div class="home">
         <h1>All Destinations</h1>
-        <div class="destinations"></div>
-        <div class="destination-card">
+        <div class="destinations">
             <router-link 
                 v-for="destination in destinations" 
                 :key="destination.id"
@@ -23,7 +22,7 @@
 </template>
 
 <script>
-import sourceData from '../..//data.json';
+import sourceData from '../../data.json';
 export default {
     name: 'Home',
     data() {
